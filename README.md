@@ -8,6 +8,7 @@ Matthew Schuette, Dreizan Moore, Maeghan Fry, Derek Tobler
 
 # Development Environment:
 Operating Systems: Macintosh and Windows
+Languages: HTML and JavaScript
 
 # Frameworks:
 Angular JS, Knockout JS(Fast-For-Each), Ember, Inferno
