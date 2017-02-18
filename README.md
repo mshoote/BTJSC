@@ -8,7 +8,13 @@ Matthew Schuette, Dreizan Moore, Maeghan Fry, Derek Tobler
 
 # Development Environment:
 Operating System: Windows
+
 Languages: HTML and JavaScript
 
 # Frameworks:
 Angular JS, Knockout JS(Fast-For-Each), Ember, Inferno
+
+# Licenses:
+Knockout, Knockout Fast-Foreach, Angular, and Inferno: MIT http://www.opensource.org/licenses/mit-license.php
+
+Ember: EmberJS' contributors https://github.com/emberjs/ember.js/blob/master/LICENSE
