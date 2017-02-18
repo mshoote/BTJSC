@@ -7,7 +7,7 @@ After testing the frameworks a recommendation will be made to our client Builder
 Matthew Schuette, Dreizan Moore, Maeghan Fry, Derek Tobler
 
 # Development Environment:
-Operating Systems: Macintosh and Windows
+Operating System: Windows
 Languages: HTML and JavaScript
 
 # Frameworks:
