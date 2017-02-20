@@ -12,7 +12,7 @@ Operating System: Windows
 Languages: HTML and JavaScript
 
 # Frameworks:
-Angular JS, Knockout JS(Fast-For-Each), Ember, Inferno
+Angular JS, Knockout JS(Fast-For-Each), Inferno, Ember
 
 # Licenses:
 Knockout, Knockout Fast-Foreach, Angular, and Inferno: MIT http://www.opensource.org/licenses/mit-license.php
