@@ -18,3 +18,6 @@ Angular JS, Knockout JS(Fast-For-Each), Inferno, Ember
 Knockout, Knockout Fast-Foreach, Angular, and Inferno: MIT http://www.opensource.org/licenses/mit-license.php
 
 Ember: EmberJS' contributors https://github.com/emberjs/ember.js/blob/master/LICENSE
+
+# Buildertrend:
+Buildertrend is an Omaha-based company that provides a large variety of residential construction software. More information is available on their website at https://www.buildertrend.com.
