@@ -1,3 +1,4 @@
+//The following code is from https://github.com/bgrins/devtools-snippets
 (function(console){
     console.save = function(data, filename){
 
@@ -6,7 +7,7 @@
             return;
         }
 
-        if(!filename) filename = 'console.json'
+        if(!filename) filename = 'dataTime.json'
 
         if(typeof data === "object"){
             data = JSON.stringify(data, undefined, 4)
@@ -28,7 +29,9 @@ window.onload = function() {
   if(!(window.performance && window.performance.timing)) {
     return;
   }
+  //This function will send the performance timing to a JSON file to be downloaded.
  //console.log(console.save(performance.timing));
+ 
  //This allows us to get the excate times we are wanting, but there are issues with loadEventEnd time being set to 0.
  console.log(console.save([performance.timing.connectEnd - performance.timing.navigationStart,
  performance.timing.responseEnd - performance.timing.requestStart,
@@ -37,4 +40,5 @@ window.onload = function() {
  performance.timing.responseEnd - performance.timing.fetchStart,
  performance.timing.loadEventEnd - performance.timing.responseEnd]));
 };
+//Allows you to set a time(in seconds) for refreshing the page.
 setTimeout(function(){window.location=window.location;},5000);
