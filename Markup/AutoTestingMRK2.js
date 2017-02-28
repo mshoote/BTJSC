@@ -25,6 +25,8 @@
     }
 })(console)
 window.onload = function() {
+    //Following function fixes the loadEventEnd time to give us a better timing.
+    window.setTimeout(function(){
   // Check for browser support
   if(!(window.performance && window.performance.timing)) {
     return;
@@ -32,13 +34,14 @@ window.onload = function() {
   //This function will send the performance timing to a JSON file to be downloaded.
  //console.log(console.save(performance.timing));
  
- //This allows us to get the excate times we are wanting, but there are issues with loadEventEnd time being set to 0.
+ //This allows us to get the excate times we are wanting.
  console.log(console.save([performance.timing.connectEnd - performance.timing.navigationStart,
  performance.timing.responseEnd - performance.timing.requestStart,
  performance.timing.domComplete - performance.timing.domLoading,
  performance.timing.loadEventEnd - performance.timing.navigationStart,
  performance.timing.responseEnd - performance.timing.fetchStart,
  performance.timing.loadEventEnd - performance.timing.responseEnd]));
+    }, 0);
 };
 //Allows you to set a time(in seconds) for refreshing the page.
 setTimeout(function(){window.location=window.location;},5000);
