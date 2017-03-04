@@ -1,3 +1,4 @@
+//<script src="https://rawgit.com/mshoote/BTJSC/master/Markup/AutoTestingMRK2.js"></script>
 //The following code is from https://github.com/bgrins/devtools-snippets
 (function(console){
     console.save = function(data, filename){
