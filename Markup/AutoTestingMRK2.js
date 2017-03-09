@@ -45,4 +45,4 @@ window.onload = function() {
     }, 0);
 };
 //Allows you to set a time(in seconds) for refreshing the page.
-//setTimeout(function(){window.location=window.location;},5000);
+setTimeout(function(){window.location=window.location;},50000);
