@@ -8,7 +8,7 @@
             return;
         }
 
-        if(!filename) filename = 'dataTime.json'
+        if(!filename) filename = 'dataTime.txt'
 
         if(typeof data === "object"){
             data = JSON.stringify(data, undefined, 4)
