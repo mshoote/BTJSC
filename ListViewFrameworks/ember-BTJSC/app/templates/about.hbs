@@ -16,6 +16,10 @@
     <th>End Date</th>
     <th>End Date Show Time</th>
     <th>Confirm Status</th>
+    <th>Confirm Counts: Pending</th>
+    <th>Confirm Counts: Confirmed</th>
+    <th>Confirm Counts: Declined</th>
+    <th>Is Internally Confirmed?</th>
     <th>Complete Status</th>
     <th>Progress</th>
   </tr>
@@ -35,6 +39,10 @@
     <td>{{item.endDate}}</td>
     <td>{{item.endDateShowTime}}</td>
     <td>{{item.confirmStatus}}</td>
+    <td>{{item.confirmCounts.pendingCount}}</td>
+    <td>{{item.confirmCounts.confirmedCount}}</td>
+    <td>{{item.confirmCounts.declinedCount}}</td>
+    <td>{{item.confirmCounts.isInternallyConfirmed}}</td>
     <td>{{item.completeStatus}}</td>
     <td>{{item.progress}}</td>
   </tr>
