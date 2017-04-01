@@ -37,4 +37,4 @@ window.onload = function() {
   performance.timing.domContentLoadedEventStart - performance.timing.domLoading]));
   }, 0);
  };
- setTimeout(function(){window.location=window.location;},50000);
+ setTimeout(function(){window.location=window.location;},10000);
