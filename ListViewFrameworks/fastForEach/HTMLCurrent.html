@@ -12,5 +12,16 @@
 </head>
 <body data-bind="if: Type">
   The time on the server is: <span data-bind="text: complicateddata.data.scheduleItems[0].startDate"></span>
+  <table>
+    <thead>
+        <tr><th>Title</th><th>start date</th></tr>
+    </thead>
+    <tbody data-bind="foreach: complicateddata.data.scheduleItems">
+        <tr>
+            <td data-bind="text: title"></td>
+            <td data-bind="text: startDate"></td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
