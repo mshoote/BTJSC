@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
 </head>
-<body>
-  The time on the server is: <span data-bind="text: title"></span>
+<body data-bind="if: Type">
+  The time on the server is: <span data-bind="text: complicateddata.data.scheduleItems[0].startDate"></span>
 </body>
 </html>
