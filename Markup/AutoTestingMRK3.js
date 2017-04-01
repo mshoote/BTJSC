@@ -33,7 +33,8 @@ window.onload = function() {
   console.log(console.save([performance.timing.domComplete - performance.timing.domLoading,
   performance.timing.domContentLoadedEventEnd -performance.timing.domContentLoadedEventStart,
   performance.timing.loadEventEnd - performance.timing.loadEventStart,
-  performance.timing.loadEventEnd - performance.timing.responseEnd]));
+  performance.timing.loadEventEnd - performance.timing.responseEnd,
+  performance.timing.domContentLoadedEventStart - performance.timing.domLoading]));
   }, 0);
  };
- //setTimeout(function(){window.location=window.location;},50000);
+ setTimeout(function(){window.location=window.location;},50000);
