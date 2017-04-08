@@ -7,7 +7,6 @@ var complicateddata;
   })
     .done(function( data ) {
       complicateddata = data;
-      console.log(complicateddata.data.scheduleItems[0].endDate);
       var model = new viewModel(complicateddata);
       ko.applyBindings(model);
     });
