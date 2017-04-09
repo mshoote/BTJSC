@@ -45,7 +45,8 @@ window.onload = function() {
   performance.timing.domInteractive - performance.timing.responseEnd,
   performance.timing.loadEventEnd - performance.timing.loadEventStart,
   performance.timing.domComplete - performance.timing.domLoading,
-  performance.timing.domContentLoadedEventStart - performance.timing.domLoading
+  performance.timing.domContentLoadedEventStart - performance.timing.domLoading,
+  null
   ]));
   }, 0);
 };
