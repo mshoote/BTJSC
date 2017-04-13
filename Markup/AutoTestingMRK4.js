@@ -50,4 +50,4 @@ window.onload = function() {
   ]));
   }, 0);
 };
-setTimeout(function(){window.location=window.location;},60000);
+//setTimeout(function(){window.location=window.location;},60000);
