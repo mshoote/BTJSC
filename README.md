@@ -13,6 +13,12 @@ Languages: HTML and JavaScript and Perl
 
 # Installation Instructions
 Ember
+- You must install npm ("sudo npm install npm -g; npm install")
+- You must install nodejs ("curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -; sudo apt-get install -y nodejs")
+- Install ember ("sudo npm install -g ember-cli")
+- When you create a new ember instance, it must be named "ember-BTJSC"
+- Replace the contents of your new ember directory with the contents in this repo's "ember-BTJSC" (under "ListViewFrameworks")
+- Run "ember s"
 
 # Frameworks:
 Angular JS, Knockout JS(Fast-For-Each), Inferno, Ember
