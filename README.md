@@ -7,9 +7,12 @@ After testing the frameworks a recommendation will be made to our client Builder
 Matthew Schuette, Dreizan Moore, Maeghan Fry, Derek Tobler
 
 # Development Environment:
-Operating System: Windows
+Operating System: Windows and Mac
 
 Languages: HTML and JavaScript and Perl
+
+# Installation Instructions
+Ember
 
 # Frameworks:
 Angular JS, Knockout JS(Fast-For-Each), Inferno, Ember
