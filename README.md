@@ -35,5 +35,17 @@ BTJSC is free software: you can redistribute it and/or modify it under the terms
 
 All associated documentation is licensed under the terms of the Creative Commons Attribution Share-Alike 4.0 license. See the file CC-BY-SA-4.0 for more details.
 
-# Garthering Test Results
-In testing each framework you must have have a reference of
+# Gathering Test Results
+For testing each framework on your own you must follow these instructions. 
+1. Make sure your computer can run a Perl portion on the Testing program.
+2. There must be a javascript reference to the Auto code in each of the framework's HTML file.
+3. Have the correct added the correct amount of JSON data (10, 100, 1k, 5k ...) the chosen framework.
+4. In the Auto code javascript be sure to set the reset time to an appropriate amount of time so the code doesn't refresh your web page before it loads the page.
+  -(You can comment out the refreshing code of the javascript to get you first couple load times and then set it back up to the correct amount of time for refreshing.)
+5. Once you open the any of the HTML files the Auto code will get the load times of the web page and download them as TEXT files.
+  -(You may need to allow your browser to download multiple iterations of the same files name.)
+6. After you have run the program several times, collect the TEXT files in your downloads folder and place them in a separate one. 
+  -(I would suggest naming the folder in the following format "FRAMEWORK_JSONSIZE".)
+7. Finally, place a copy of the PERL code into the same folder, make sure to change the file rout in the Perl script each time you want to test the data times.
+8. Afterwards run the PERL code in the folder and you will see a new TEXT file named TOTALTIME.TXT. This file will give you the average of the frameworks loading times.
+
