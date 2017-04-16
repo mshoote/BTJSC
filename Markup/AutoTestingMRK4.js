@@ -52,4 +52,5 @@ window.onload = function() {
 };
 //setTimeout(function(){window.location=window.location;},60000);
 //setTimeout(function(){window.location=window.location;},30000);
-setTimeout(function(){window.location=window.location;},10000);
+setTimeout(function(){window.location=window.location;},20000);
+//setTimeout(function(){window.location=window.location;},10000);
