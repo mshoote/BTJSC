@@ -51,5 +51,5 @@ window.onload = function() {
   }, 0);
 };
 //setTimeout(function(){window.location=window.location;},60000);
-setTimeout(function(){window.location=window.location;},30000);
-//setTimeout(function(){window.location=window.location;},10000);
+//setTimeout(function(){window.location=window.location;},30000);
+setTimeout(function(){window.location=window.location;},10000);
