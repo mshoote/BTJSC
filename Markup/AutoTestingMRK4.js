@@ -56,7 +56,7 @@ window.onload = function() {
   }, 0);
 };
 //This is the resfreshing function  of the Auto script, the time is in millaseconds (1000 = 1 sec).
-setTimeout(function(){window.location=window.location;},60000);
+//setTimeout(function(){window.location=window.location;},60000);
 //setTimeout(function(){window.location=window.location;},30000);
 //setTimeout(function(){window.location=window.location;},20000);
-//setTimeout(function(){window.location=window.location;},10000);
+setTimeout(function(){window.location=window.location;},10000);
