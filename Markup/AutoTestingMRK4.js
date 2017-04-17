@@ -1,4 +1,7 @@
 //<script src="https://rawgit.com/mshoote/BTJSC/master/Markup/AutoTestingMRK4.js"></script>
+//The following function sets up the downloading part of the Auto script nameing the
+//downloadable file and the file type.
+
 (function(console){
     console.save = function(data, filename){
 
@@ -24,6 +27,8 @@
         a.dispatchEvent(e)
     }
 })(console)
+//This function begins to create the data that the Auto script will be gathering to get the times
+//of the webpage in the browser's Dev console. 
 window.onload = function() {
 	window.setTimeout(function(){
   // Check for browser support
@@ -50,6 +55,7 @@ window.onload = function() {
   ]));
   }, 0);
 };
+//This is the resfreshing function  of the Auto script, the time is in millaseconds (1000 = 1 sec).
 setTimeout(function(){window.location=window.location;},60000);
 //setTimeout(function(){window.location=window.location;},30000);
 //setTimeout(function(){window.location=window.location;},20000);
