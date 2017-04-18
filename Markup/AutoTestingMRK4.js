@@ -36,20 +36,35 @@ window.onload = function() {
     return;
   }
   console.log(console.save([
+	  // Total time from start to load
   performance.timing.loadEventEnd - performance.timing.fetchStart,
+	  // Time consumed preparing the new page
   performance.timing.fetchStart - performance.timing.navigationStart,
+	  // Time spent during redirection
   performance.timing.redirectEnd - performance.timing.redirectStart,
+	  // AppCache Time
   performance.timing.domainLookupStart - performance.timing.fetchStart,
+	  // DNS query time
   performance.timing.domainLookupEnd - performance.timing.domainLookupStart,
+	  // TCP connection time
   performance.timing.connectEnd - performance.timing.connectStart,
+	  // Time spent during the request
   performance.timing.responseEnd - performance.timing.requestStart,
+	  // Time spent unloading documents
   performance.timing.unloadEventEnd - performance.timing.unloadEventStart,
+	  // Time spent DOMContentLoaded 
   performance.timing.domContentLoadedEventEnd - performance.timing.domContentLoadedEventStart,
+	  // Time spent constructing the DOM tree
   performance.timing.domComplete - performance.timing.domInteractive,
+	  //Processing and loading time
   performance.timing.loadEventEnd - performance.timing.responseEnd,
+	  // Request to completion of the DOM loading
   performance.timing.domInteractive - performance.timing.responseEnd,
+	  // Load event time
   performance.timing.loadEventEnd - performance.timing.loadEventStart,
+	  // Processing Time
   performance.timing.domComplete - performance.timing.domLoading,
+	  //Painting time
   performance.timing.domContentLoadedEventStart - performance.timing.domLoading,
   null
   ]));
@@ -59,4 +74,4 @@ window.onload = function() {
 //setTimeout(function(){window.location=window.location;},60000);
 //setTimeout(function(){window.location=window.location;},30000);
 //setTimeout(function(){window.location=window.location;},20000);
-setTimeout(function(){window.location=window.location;},10000);
+//setTimeout(function(){window.location=window.location;},10000);
