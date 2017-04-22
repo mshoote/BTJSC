@@ -1,6 +1,6 @@
 //<script src="https://rawgit.com/mshoote/BTJSC/master/Markup/AutoTestingMRK4.js"></script>
-//The following function sets up the downloading part of the Auto script nameing the
-//downloadable file and the file type.
+//The following code is from https://github.com/bgrins/devtools-snippets and has been modified to work with our testing format with any framework design.
+//The following function sets up the downloadable file of the Auto script nameing the downloadable file and the file type.
 
 (function(console){
     console.save = function(data, filename){
@@ -30,6 +30,7 @@
 //This function begins to create the data that the Auto script will be gathering to get the times
 //of the webpage in the browser's Dev console. 
 window.onload = function() {
+	//Following function fixes the loadEventEnd time to give us a better timing.
 	window.setTimeout(function(){
   // Check for browser support
     if(!(window.performance && window.performance.timing)) {
@@ -66,12 +67,14 @@ window.onload = function() {
   performance.timing.domComplete - performance.timing.domLoading,
 	  //Painting time
   performance.timing.domContentLoadedEventStart - performance.timing.domLoading,
+      //NULL is needed for the Perl script code to pull the data times properly.
   null
   ]));
   }, 0);
 };
-//This is the resfreshing function  of the Auto script, the time is in millaseconds (1000 = 1 sec).
-//setTimeout(function(){window.location=window.location;},60000);
-//setTimeout(function(){window.location=window.location;},30000);
-//setTimeout(function(){window.location=window.location;},20000);
-//setTimeout(function(){window.location=window.location;},10000);
+//This is the resfreshing function of the Auto script, the timer is set in millaseconds (1000 = 1 sec).
+
+//setTimeout(function(){window.location=window.location;},60000); //60 seconds
+//setTimeout(function(){window.location=window.location;},30000); //30 seconds
+//setTimeout(function(){window.location=window.location;},20000); //20 seconds
+//setTimeout(function(){window.location=window.location;},10000); //10 seconds
