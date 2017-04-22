@@ -16,7 +16,7 @@ Ember
 1. You must install npm ("sudo npm install npm -g; npm install")
 2. You must install nodejs ("curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -; sudo apt-get install -y nodejs")
 3. Install ember ("sudo npm install -g ember-cli")
-4. Run "sudo ember new [name-of-your-project>]"
+4. Run "sudo ember new [name-of-your-project]"
 5. Replace the contents of your app and public directories in your new ember project with the app and public directories in this repo's "ember" directory ("ember directory located under "ListViewFrameworks")
 6. Run "ember s"
 
