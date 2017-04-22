@@ -37,12 +37,6 @@ export default Ember.Route.extend({
 {"performedByName":"RV49ox8MWg","id":1924,"title":"vTA8Rbkbmr6pbuGfVyksydHBPxGLef0JxQyxbfmVp4SPYUaIoj","duration":1,"jobColor":"#435130","jobId":2227104,"isMarkedComplete":false,"builderID":1,"scheduleColor":"#435130","startDate":"2017-01-23T19:59:40.4981556Z","startDateShowTime":false,"endDate":"2017-01-23T19:59:40.4981556Z","endDateShowTime":false,"confirmStatus":"False","confirmCounts":{"pendingCount":1,"confirmedCount":1,"declinedCount":1,"isInternallyConfirmed":false},"completeStatus":"Ed1qxv8l2COAHqQ","progress":0.21}
 ]
 ;
-
-		// NON-HARDCODE solution
-		//var testData = '/jsonData/5kItems.json';
-		//return Ember.$.getJSON(testData).then(function(td) {
-      	//		return td.data.scheduleItems;
-		//});		
 			
 }
 });
