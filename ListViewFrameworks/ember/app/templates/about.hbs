@@ -1,0 +1,52 @@
+<h2>Listing Table Information</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Performed By Name</th>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Duration</th>
+    <th>Job Color</th>
+    <th>Job ID</th>
+    <th>Is Marked Complete?</th>
+    <th>Builder ID</th>
+    <th>Schedule Color</th>
+    <th>Start Date</th>
+    <th>Start Date Show Time</th>
+    <th>End Date</th>
+    <th>End Date Show Time</th>
+    <th>Confirm Status</th>
+    <th>Confirm Counts: Pending</th>
+    <th>Confirm Counts: Confirmed</th>
+    <th>Confirm Counts: Declined</th>
+    <th>Is Internally Confirmed?</th>
+    <th>Complete Status</th>
+    <th>Progress</th>
+  </tr>
+{{#each model as |item|}}
+  <tr>
+    <td>{{item.performedByName}}</td>
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.duration}}</td>
+    <td>{{item.jobColor}}</td>
+    <td>{{item.jobId}}</td>
+    <td>{{item.isMarkedComplete}}</td>
+    <td>{{item.builderID}}</td>
+    <td>{{item.scheduleColor}}</td>
+    <td>{{item.startDate}}</td>
+    <td>{{item.startDateShowTime}}</td>
+    <td>{{item.endDate}}</td>
+    <td>{{item.endDateShowTime}}</td>
+    <td>{{item.confirmStatus}}</td>
+    <td>{{item.confirmCounts.pendingCount}}</td>
+    <td>{{item.confirmCounts.confirmedCount}}</td>
+    <td>{{item.confirmCounts.declinedCount}}</td>
+    <td>{{item.confirmCounts.isInternallyConfirmed}}</td>
+    <td>{{item.completeStatus}}</td>
+    <td>{{item.progress}}</td>
+  </tr>
+{{/each}}
+</table>
+
+{{outlet}}
