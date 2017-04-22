@@ -1,20 +1,23 @@
-#This file will need to be stored with the paging time text file to work
+#This file will need to be stored with the paging time text file to work properly.
+#The Perl script will output a sum of all the times and the total number of text file in the chosen folder.
 
 use List::MoreUtils 'pairwise';
-#location of pageTiming files
-my $dir = "C:/Users/CandyMan/Desktop/5k";
+#You must change the location of pageTiming files, for each testing result: example:
+#	- C:/Users/Jim_pc/Desktop/Angular/Angular_10k_Chrome
+#	- C:/Users/Jim_pc/Desktop/Angular/Angular_1k_FireFox
+my $dir = "C:/Users/USER_NAME/Desktop/FOLDER_NAME/FRAMEWORK_JSONSIZE_BROWSER";
 
 my @temp = ();
 my @tmp =();
 my @sum = ();
 my $num = 0;
 
-#Loop for accessing each Text file
+#Loop for accessing each Text file.
 foreach my $fp (glob("$dir/*.txt")) {
   open my $fh, "<", $fp or die "can't read open '$fp'";
   my $count = 0;
   
-#Gathers the times for each file
+#Gathers the times for each file.
 while (my $line = <$fh>){
 	chomp $line;
 	my @strings1 = $line =~ /([0-9]+)(?:\,|\s\])/g;
@@ -26,7 +29,7 @@ while (my $line = <$fh>){
 	$count++;
 }
 
-#Begins to sum the paging times
+#Begins to sum the paging times.
 if(tmp){
   @sum = pairwise { $a + $b } @temp, @tmp;
   @tmp = @sum;
@@ -39,7 +42,7 @@ $num++;
 }
 print $num . "\n";
 
-#Stores the final times of the testing results
+#Stores the final times of the testing results into "total.txt".
 foreach my $s (@sum){
   print "$s, ";
   }
