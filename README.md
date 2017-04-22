@@ -51,7 +51,7 @@ For testing each framework on your own you must follow these instructions.
 5. Once you open the any of the HTML files the Auto code will get the load times of the web page and download them as TEXT files.
   -(You may need to allow your browser to download multiple iterations of the same files name.)
 6. After you have run the program several times, collect the TEXT files in your downloads folder and place them in a separate one. 
-  -(I would suggest naming the folder in the following format "FRAMEWORK_JSONSIZE".)
+  -(I would suggest naming the folder in the following format "FRAMEWORK_JSONSIZE_BROWSER".)
 7. Finally, place a copy of the PERL code into the same folder, make sure to change the file rout in the Perl script each time you want to test the data times.
 8. Afterwards run the PERL code in the folder and you will see a new TEXT file named TOTALTIME.TXT. This file will give you the average of the frameworks loading times.
 
