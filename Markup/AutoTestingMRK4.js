@@ -1,4 +1,3 @@
-//<script src="https://rawgit.com/mshoote/BTJSC/master/Markup/AutoTestingMRK4.js"></script>
 //The following code is from https://github.com/bgrins/devtools-snippets and has been modified to work with our testing format with any framework design.
 //The following function sets up the downloadable file of the Auto script nameing the downloadable file and the file type.
 
