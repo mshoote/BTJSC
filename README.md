@@ -56,5 +56,5 @@ For testing each framework on your own you must follow these instructions. Use t
 8. Afterwards run the PERL code in the folder and you will see a new TEXT file named TOTALTIME.TXT. This file will give you the average of the frameworks loading times.
 
 # Testing Warning
-For the frameworks code in the "TestingFrameworks" folder you must put the JSON data code (10, 100, 1k...) directly in the specified location. This is so you can get accurate page loading times from the web browser console.
+For the frameworks code in the "TestingFrameworks" folder you must put the JSON data code (10, 100, 1k...) directly in the specified location. This is so you can get accurate page loading times from the web browser console, for Angular place the script in the JS file, both Knockout and Fast For Each needs it in the HTML file, and for ember in the about.js file.
 
