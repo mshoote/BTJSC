@@ -42,16 +42,19 @@ BTJSC is free software: you can redistribute it and/or modify it under the terms
 All associated documentation is licensed under the terms of the Creative Commons Attribution Share-Alike 4.0 license. See the file CC-BY-SA-4.0 for more details.
 
 # Gathering Test Results
-For testing each framework on your own you must follow these instructions. 
+For testing each framework on your own you must follow these instructions. Use the framework code in "TestingFrameworks" folder.
 1. Make sure your computer can run a Perl portion on the Testing program.
-2. There must be a javascript reference to the Auto code in each of the framework's HTML file.
-3. Have the correct added the correct amount of JSON data (10, 100, 1k, 5k ...) the chosen framework.
-4. In the Auto code javascript be sure to set the reset time to an appropriate amount of time so the code doesn't refresh your web page before it loads the page.
-  -(You can comment out the refreshing code of the javascript to get you first couple load times and then set it back up to the correct amount of time for refreshing.)
-5. Once you open the any of the HTML files the Auto code will get the load times of the web page and download them as TEXT files.
+2. There must be a JavaScript reference to the Auto code in each of the framework's HTML file.
+3. Add the correct amount of JSON data (10, 100, 1k, 5k ...) the chosen framework.
+4. In the Auto code JavaScript be sure to set the reset time to an appropriate amount of time so the code doesn't refresh your web page before it loads the page. This portion of the code is commented out already.
+  -(You can comment out the refreshing code of the JavaScript to get you first couple load times and then set it back up to the correct amount of time for refreshing.)
+5. Once you open any of the HTML files the Auto code will get the load times of the web page and download them as TEXT files.
   -(You may need to allow your browser to download multiple iterations of the same files name.)
-6. After you have run the program several times, collect the TEXT files in your downloads folder and place them in a separate one. 
+6. After you have run the program several times, collect the TEXT files in the downloads folder and place them in a separate one. 
   -(I would suggest naming the folder in the following format "FRAMEWORK_JSONSIZE_BROWSER".)
-7. Finally, place a copy of the PERL code into the same folder, make sure to change the file rout in the Perl script each time you want to test the data times.
+7. Finally, place a copy of the PERL code into the same folder; make sure to change the file rout in the Perl script each time you want to test the data times.
 8. Afterwards run the PERL code in the folder and you will see a new TEXT file named TOTALTIME.TXT. This file will give you the average of the frameworks loading times.
+
+#Testing Warning
+For the frameworks code in the "TestingFrameworks" folder you must put the JSON data code (10, 100, 1k...) directly in the specified location. This is so you can get accurate page loading times from the web browser console.
 
