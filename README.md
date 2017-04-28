@@ -58,3 +58,5 @@ For testing each framework on your own you must follow these instructions. Use t
 # Testing Warning
 For the frameworks code in the "TestingFrameworks" folder you must put the JSON data code (10, 100, 1k...) directly in the specified location. This is so you can get accurate page loading times from the web browser console, for Angular place the script in the JS file, both Knockout and Fast For Each needs it in the HTML file, and for ember in the about.js file.
 
+# Results
+The results of this project shall be displayed below, but there is also a document named Javascript Framework Results that has our thoughts on metrics such as documentation of frameworks and ease of use. Please refer to the aforementioned document for a simple outlook on the teams thoughts and which frameworks we found to be fastest.
