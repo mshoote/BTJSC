@@ -60,3 +60,70 @@ For the frameworks code in the "TestingFrameworks" folder you must put the JSON 
 
 # Results
 The results of this project shall be displayed below, but there is also a document named Javascript Framework Results that has our thoughts on metrics such as documentation of frameworks and ease of use. Please refer to the aforementioned document for a simple outlook on the teams thoughts and which frameworks we found to be fastest.
+
+To see specific metrics and the processing and loading of our data table via the frameworks please refer to the data_time_metrics.docx file in the main directory. The document shows how each metric was obtained from the process.
+
+The charts section shall show a visual display of the results we obtained from testing each individual framework and differences in browsers as well.
+
+# Charts
+Below are charts showing our results from testing the frameworks.
+
+The 1000 JSON Data Items Comparison
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/1kComparison.png?raw=true)
+
+The Chrome Loading Items
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/chromeLoadingTimes.png?raw=true)
+
+The Chrome Loading Times Zoomed in on 50-500 JSON Data Items
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/chromeLoadingTimesZoom.png?raw=true)
+
+The Painting Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/paintingTimes.png?raw=true)
+
+The Painting Times Zoomed in on 50-500 JSON Data Items
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/paintingTimesZoom.png?raw=true)
+
+The Processing Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/ProcessingTimes.png?raw=true)
+
+The Processing Times Zoomed in on 50-500 JSON Data Items
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/ProcessingTimesZoom.png?raw=true)
+
+The Ember Chrome Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/EmberChrome.png?raw=true)
+
+The Ember Firefox Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/EmberFirefox.png?raw=true)
+
+The Knockout Fast For Each Chrome Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/FFEChrome.png?raw=true)
+
+The Knockout Fast For Each Firefox Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/KnockoutChrome.png?raw=true)
+
+The Knockout Chrome Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/KnockoutFirefox.png?raw=true)
+
+The Angular Chrome Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/AngularChrome.png?raw=true)
+
+The Angular Firefox Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/AngularFirefox.png?raw=true)
+
+The Angular Chrome VS Firefox Times
+
+![alt tag](https://github.com/mshoote/BTJSC/blob/master/Charts/chromevsfirefoxAng.png?raw=true)
