@@ -23,6 +23,15 @@ Ember
 # Frameworks:
 Angular JS, Knockout JS(Fast-For-Each), Inferno, Ember
 
+# What Makes Fast-For-Each Better than normal for each
+
+Updates are batched into animationFrames.
+It has a noIndex option that makes it O(1) in terms of computational complexity.
+DOM nodes are re-used for re-ordering/deletion/inserts within the same animation frame.
+It can re-use the Knockout Context with a noContext option.
+
+So, in other words, in the average case it'll have fewer reflows because DOM changes are batched into animation frames. When given options noIndex it will scale to relatively huge numbers because each addition has constant-time computational complexity.
+
 # Licenses:
 Knockout, Knockout Fast-Foreach, Angular, and Inferno: MIT http://www.opensource.org/licenses/mit-license.php
 
